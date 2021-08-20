@@ -46,10 +46,11 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F9f-C2-7bP">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F9f-C2-7bP" userLabel="Celsius Text Field">
                                                 <rect key="frame" x="0.0" y="52.5" width="352" height="52"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="celsiusTextField"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                             </textField>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -73,10 +74,11 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wiF-xM-Ty1">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wiF-xM-Ty1" userLabel="Fahrenheit Text Field">
                                                 <rect key="frame" x="0.0" y="52" width="352" height="52"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="fahrenheitTextField"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                             </textField>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -98,7 +100,7 @@
                                                 <rect key="frame" x="123" y="36.5" width="106" height="31.5"/>
                                                 <state key="normal" title="Convertir"/>
                                                 <connections>
-                                                    <action selector="convert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nBV-pk-gsa"/>
+                                                    <action selector="convertToFahrenheit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bFl-G6-96R"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -142,8 +144,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="celsiusTextField" destination="F9f-C2-7bP" id="sOW-DR-1iw"/>
-                        <outlet property="fahrenheitTextField" destination="wiF-xM-Ty1" id="ici-k5-dBU"/>
+                        <outlet property="celsiusTextField" destination="F9f-C2-7bP" id="gf9-4z-qBq"/>
+                        <outlet property="fahrenheitTextField" destination="wiF-xM-Ty1" id="muj-eV-qH4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
